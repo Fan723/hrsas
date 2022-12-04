@@ -30,6 +30,13 @@ module.exports = {
   lintOnSave: process.env.NODE_ENV === 'development',
   productionSourceMap: false,
   devServer: {
+    // 解决跨域问题
+    proxy: {
+      '/api': {
+        target: 'http://ihrm.itheima.net/', // 我们要代理的地址
+        changeOrigin: true // 是否跨域 需要设置此值为true 才可以让本地服务代理
+      }
+    },
     port: port,
     open: true,
     overlay: {

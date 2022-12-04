@@ -271,6 +271,10 @@ module.exports = {
       }
     ],
     'array-bracket-spacing': [2, 'never'],
-    'space-before-function-paren': 'off'
+    'space-before-function-paren': 'off',
+    'space-before-function-paren': 'off',
+    'vue/html-self-closing': 'off',
+    'vue/html-indent': 'off',
+    'vue/html-closing-bracket-newline': 'off'
   }
 }
